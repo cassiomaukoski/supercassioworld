@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Cassio World</title>
+    <link rel="icon" type="image/png" href="assets/images/icon.png" />
+    <link rel="stylesheet" href="assets/css/game.css" />
+    <script type="text/javascript" src="assets/js/ground.js"></script>
+    <script type="text/javascript" src="assets/js/game.js"></script>
+</head>
+<body style="position: fixed; background-color: #adfaff; margin: 0;">
+    <div class="game">
+        <div class="sky" style="justify-self: center">
+            <img id="languageImage" style="width: 60px; position: absolute; left: 10px; top: 10px; z-index: 2" onclick="language()"/>
+            <img id="logoImage" class="logoImage" src="assets/images/scw.png"/>
+
+            <div class="clouds">
+                <img id="cloud" class="cloud" src="assets/images/cloud_1.png"/>
+            </div>
+        </div>
+        
+        <div class="lucky">
+            <div class="start">
+                <p id="startText" style="text-align: center"></p>
+            </div>
+            <img id="lucky" class="luckyBlock" src="assets/images/lucky.gif"/>
+            <div id="divInfo" style="white-space: normal; width: 240px; height: 180px; position: relative; bottom: 190px; display: flex; align-items: flex-end; ">
+                <p id="info" style="text-align: center; margin: 0;"></p>
+            </div>
+        </div>
+        
+        <div class="player">
+            <a href="https://www.linkedin.com/in/cassiomaukoski/">
+                <img id="player" class="playerImage" src="assets/images/idleright.png"/>
+            </a>
+        </div>
+        
+        <div id="grounds" class="grounds"></div>
+    </div>
+</body>
+</html>

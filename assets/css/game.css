@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap');
+
+p{
+    font-family: 'Handjet', cursive;
+    font-size: 2rem;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 2000px;
+    grid-template-rows: calc(100vh - 590px) 115px 235px 240px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "sky"
+        "lucky"
+        "player"
+        "ground";
+}
+
+.sky {
+    grid-area: sky;
+}
+
+.clouds{
+    width: 100vw;
+    height: calc(100vh - 590px);
+}
+
+.cloud{
+    width: 20vw;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+}
+
+.logoImage{
+    position: absolute;
+    top:40px;
+    width: 40vw;
+    left: 30vw;
+}
+
+.lucky {
+    z-index: 2;
+    grid-area: lucky;
+}
+
+.luckyBlock{
+    width: 60px;
+    position: relative;
+    left: 2000px;
+    top: 60px;
+}
+
+.start{
+    position: absolute;
+    top: 50vh;
+    width: 100vw;
+}
+
+.player {
+    grid-area: player;
+    align-content: end;
+    align-items: end;
+    align-self: end;
+}
+
+.playerImage{
+    position: absolute;
+    bottom:235px;
+    width: 60px;
+}
+
+.grounds {
+    grid-area: ground;
+}
